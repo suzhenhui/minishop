@@ -1,0 +1,15 @@
+@mixin sc($fontSize, $color){
+  font-size: $fontSize;
+  color: $color;
+}
+
+//图片水平居中
+@mixin itc{
+  margin: 0 auto;
+  display: block;
+}
+//宽高
+@mixin wh($width, $height){
+  width: $width;
+  height: $height
+}
