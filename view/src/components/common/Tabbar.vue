@@ -13,6 +13,7 @@
 </template>
 
 <script>
+    import { mapState } from 'vuex';
     export default {
         name: "Tabbar",
         data(){
@@ -55,10 +56,26 @@
               currentItem: this.$store.state.tabBar.currentTabBar?this.$store.state.tabBar.currentTabBar:'home'
             }
         },
+        computed:{
+          ...mapState({
+            currentTabBar: state => state.tabBar.currentTabBar
+          })
+        },
         methods:{
           setCurrentActive(item){
             this.currentItem = item.link;
             this.$router.push({name:item.link})
+          }
+        },
+        watch:{
+          currentTabBar:function (value) {
+            let data = this.staticData;
+            for(var item of data){
+              if(value === item.link){
+                this.currentItem = item.link;
+              }
+            }
+
           }
         }
     }

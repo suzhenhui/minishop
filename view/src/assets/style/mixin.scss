@@ -13,3 +13,61 @@
   width: $width;
   height: $height
 }
+
+@mixin pd($top, $bottom, $left, $right){
+  position: absolute;
+  top: $top;
+  bottom: $bottom;
+  left: $left;
+  right: $right;
+}
+
+@mixin nowrap(){
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@mixin nowrap-clamp($size){
+  display: -webkit-box;
+  -webkit-line-clamp: $size;
+  word-break: break-word;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: normal;
+  word-spacing: normal;
+}
+
+@mixin l-allow($len, $width, $color){
+  display: block;
+  width: $len;
+  height: $len;
+  border-left: $width solid $color;
+  border-bottom: $width solid $color;
+  transform: rotate(45deg)
+}
+
+@mixin r-allow($len, $width, $color){
+  display: block;
+  width: $len;
+  height: $len;
+  border-right: $width solid $color;
+  border-bottom: $width solid $color;
+  transform: rotate(-45deg)
+}
+
+@mixin header(){
+  height: 80px;
+  font-size: 32px;
+  background: #fff;
+  color: #000;
+  padding: 0px 25px;
+  border-bottom: 1px solid #E8EAED;
+}
+
+@mixin button {
+  display: block;
+  border-radius: 10px;
+  height: 88px;
+  margin: 0 auto;
+}

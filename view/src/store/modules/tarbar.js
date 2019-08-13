@@ -5,7 +5,11 @@ const state = {
 
 const mutations = {
   changeTabBar(state,value){
+   // console.log(value)
     state.currentTabBar = value;
+  },
+  setCartNumber(state,value){
+    state.cartNumber = value;
   }
 }
 

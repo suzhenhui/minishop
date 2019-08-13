@@ -86,3 +86,7 @@ label, button {
   visibility:hidden;
   overflow: hidden;
 }
+
+input{
+  outline: 0;
+}

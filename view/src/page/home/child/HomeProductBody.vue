@@ -1,16 +1,22 @@
 <template>
-  <div class="product-info border">
-    <img class="product-img" src="http://shop.gxzhenzhi.net/images/201906/goods_img/425_G_1559641703643.jpg" alt="">
-    <span class="product-title">楠搏王敞呼吸鼻炎特效草本抑菌液[包邮]</span>
+  <div class="product-info border" @click="goDetail()">
+    <img class="product-img" :src="item.img" alt="">
+    <span class="product-title">{{item.name}}</span>
     <div class="product-bottom">
-      <span class="product-price">￥ 22.00</span>
+      <span class="product-price">￥ {{item.price}}</span>
     </div>
   </div>
 </template>
 
 <script>
     export default {
-        name: "HomeProductBody"
+        name: "HomeProductBody",
+        props:['item'],
+        methods:{
+          goDetail(){
+            this.$router.push({name:'product',query:{id:this.item.id}})
+          }
+        }
     }
 </script>
 
@@ -27,6 +33,25 @@
     border-bottom: 1px solid #F5F5F5;
     .product-img{
       width: 100%;
+    }
+    .product-title{
+      display: -webkit-box;
+      height: 66px;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp:2;
+      word-break: break-word;
+      font-size: $fontSize;
+      margin: 16px 0;
+      box-sizing: border-box;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .product-bottom{
+      display: flex;
+      justify-content: space-between;
+      .product-price{
+        font-size: $fontSize;
+      }
     }
   }
 </style>

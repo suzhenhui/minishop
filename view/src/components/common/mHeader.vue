@@ -1,12 +1,17 @@
 <template>
     <div class="main-header">
-      <input type="search" placeholder="音箱" readonly="true">
+      <input type="search" placeholder="" readonly="true" @click="onSearch">
     </div>
 </template>
 
 <script>
     export default {
-        name: "mHeader"
+        name: "mHeader",
+        methods:{
+          onSearch(){
+            this.$router.push({name:'search'})
+          }
+        }
     }
 </script>
 

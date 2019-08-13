@@ -1,0 +1,52 @@
+.ui-common-header{
+  position: relative;
+  display: flex;
+  background: #fff;
+  height: 80px;
+  padding: 0px 25px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #E8EAED;
+  h3{
+    padding: 0;
+    margin: 0;
+    font-size: 32px;
+    color: #000;
+    line-height: 80px;
+    height: 80px;
+    font-weight: normal;
+  }
+  .header-word{
+    font-size:24px;
+  }
+}
+
+.ui-number{
+  border: 1px solid #ddd;
+  a{
+    float: left;
+    width: 46px;
+    height: 46px;
+    text-align: center;
+    font-size: $mainFontSize;
+    color: #000;
+  }
+  .number{
+    float: left;
+    width: 46px;
+    height: 46px;
+    border: 0;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    font-size: $fontSize;
+    text-align: center;
+  }
+}
+
+.main-wrapper{
+  padding: 80px 0 100px;
+}
+
+.mint-toast-text{
+  font-size: $fontSize;
+}

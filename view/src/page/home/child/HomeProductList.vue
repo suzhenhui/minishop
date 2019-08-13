@@ -2,15 +2,13 @@
   <div class="product-list">
     <div class="product-list-header">
       <div class="header-icon"></div>
-      <div class="header-title">热门推荐</div>
+      <div class="header-title">{{title}}</div>
       <div class="header-icon">
         <i></i>
       </div>
     </div>
     <div class="product-list-body">
-      <home-product-body></home-product-body>
-      <home-product-body></home-product-body>
-      <home-product-body></home-product-body>
+      <home-product-body v-for="(item,index) in products" :key="index" :item="item"></home-product-body>
     </div>
   </div>
 </template>
@@ -22,7 +20,8 @@
         name: "HomeProductList",
         components:{
           HomeProductBody
-        }
+        },
+        props:["title","products"]
     }
 </script>
 

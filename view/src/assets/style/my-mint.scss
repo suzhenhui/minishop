@@ -1,0 +1,53 @@
+.mint-msgbox {
+  border-radius: 20px;
+  width: 70%;
+  font-size: 28px;
+}
+.mint-msgbox-title {
+  color: #404245;
+  font-weight: 400;
+}
+.mint-msgbox-content {
+  padding: 30px 40px 30px;
+  border-bottom: 0.5px solid #ccc;
+  min-height: 36px;
+  position: relative;
+}
+.mint-msgbox-message {
+  color: #404245;
+  line-height: 20px;
+}
+.mint-msgbox-btns {
+  font-size: 30px;
+  height: 88px;
+  line-height: 88px;
+}
+.mint-msgbox-cancel {
+  color: #0479fa;
+  border-right: 0.5px solid #ccc;
+}
+.mint-msgbox-cancel:active {
+  color: #787878;
+}
+.mint-msgbox-confirm {
+  color: #ff9600;
+  background-color: #FFFFFF;
+}
+.mint-msgbox-confirm:active {
+  color: #ff9600;
+}
+.mint-toast {
+  position: fixed;
+  max-width: 80%;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  box-sizing: border-box;
+  text-align: center;
+  z-index: 5000;
+  -webkit-transition: opacity .3s linear;
+  transition: opacity .3s linear
+}
+.picker-slot{
+  font-size: 30px;
+}

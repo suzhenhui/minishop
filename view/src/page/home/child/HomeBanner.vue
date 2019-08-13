@@ -1,11 +1,8 @@
 <template>
   <div>
     <mt-swipe :style="getBannerStyle">
-      <mt-swipe-item>
-        <img :style="getBannerStyle" src="http://shop.gxzhenzhi.net/data/afficheimg/20190430odmzej.jpg" alt="">
-      </mt-swipe-item>
-      <mt-swipe-item>
-        <img :style="getBannerStyle" src="http://shop.gxzhenzhi.net/data/afficheimg/20190531febkgn.jpg" alt="">
+      <mt-swipe-item v-for="(data, index) in items" :key="index">
+        <img :style="getBannerStyle" :src="data.photo.large" alt="">
       </mt-swipe-item>
     </mt-swipe>
   </div>
@@ -16,6 +13,7 @@
 
     export default {
         name: "HomeBanner",
+        props:['items'],
         methods:{
 
         },
