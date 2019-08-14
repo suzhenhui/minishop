@@ -1,160 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4110d4d7-8f70-49f8-9c50-284c469a15b3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/common/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/jwt.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/jwt_pub.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/pool.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/images/bjb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/images/dbd.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/images/dcl.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/images/honor.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/images/huawei.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/images/iphone.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/images/meizu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/images/oppo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/images/pbdn.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/images/sanxing.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/images/vivo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/images/wbl.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/images/xiaomi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/images/yijia.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/images/ytj.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/address.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/cart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/category.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/order.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/products.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/county.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/api/address.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/api/auth-base.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/api/banners.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/api/cart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/api/category.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/api/home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/api/order.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/api/products.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/api/search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/api/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/images/change-icon/a.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/images/change-icon/ad_list_default.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/images/change-icon/alipay.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/images/change-icon/all_tit_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/images/change-icon/bg_address_line.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/images/change-icon/buy_btn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/images/change-icon/choice.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/images/change-icon/choice_sel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/images/change-icon/chooseon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/images/change-icon/close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/images/change-icon/default_image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/images/change-icon/detail_info_cart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/images/change-icon/empty_goods.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/images/change-icon/head.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/images/change-icon/ic_cancelled_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/images/change-icon/icon_address.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/images/change-icon/icon_cart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/images/change-icon/icon_change.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/images/change-icon/icon_paid.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/images/change-icon/icon_pay.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/images/change-icon/icon_receiving.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/images/change-icon/icon_sc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/images/change-icon/localhost.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/images/change-icon/login_ico.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/images/change-icon/message.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/images/change-icon/navBar_back_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/images/change-icon/none_order.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/images/change-icon/nosku.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/images/change-icon/ok.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/images/change-icon/setup.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/images/change-icon/wx.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/style/common.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/assets/style/my-mint.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/common/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/components/common/CommonHeader.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/components/common/HeaderItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/components/common/comButton.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/components/common/subHeader.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/const/enum.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/address/AddressEdit.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/address/AddressList.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/address/child/AddressItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/address/child/FromChooseItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/address/child/FromChooseList.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/address/child/FromInputItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/auth/Signin.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/cart/child/CartFooter.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/cart/child/CartHeader.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/cart/child/CartList.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/category/child/CategoryBody.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/checkout/checkout.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/checkout/child/CheckoutAddress.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/checkout/child/CheckoutDesc.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/checkout/child/CheckoutFooter.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/checkout/child/CheckoutGoods.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/order/OrderDetail.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/order/child/OrderDetailBody.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/order/child/OrderList.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/order/order.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/order/static.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/payment/PaySuccess.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/payment/Payment.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/product-detail/DetailBody.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/product-detail/DetailFooter.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/product-detail/ProductDetail.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/product-detail/child/DescIem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/product-detail/child/InfoGoodsSwipe.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/product-detail/child/InfoItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/product-detail/child/ProductInfo.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/product-list/ProductList.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/product-list/child/ProductListBody.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/search/child/SearchBody.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/search/child/SearchHeader.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/search/search.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/page/user/child/UserOrderItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/server/network.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/store/getter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/store/modules/address.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/store/modules/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/store/modules/cart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/store/modules/category.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/store/modules/detail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/store/modules/home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/store/modules/order.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/src/util/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/static/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/view/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/view/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/assets/style/mixin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/assets/style/mixin.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/assets/style/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/assets/style/reset.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/assets/style/variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/assets/style/variable.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/components/common/Tabbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/components/common/Tabbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/components/common/mHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/components/common/mHeader.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/page/cart/Cart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/page/cart/Cart.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/page/category/category.vue" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/page/category/category.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/page/home/child/HomeBanner.vue" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/page/home/child/HomeBanner.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/page/home/child/HomeProductBody.vue" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/page/home/child/HomeProductBody.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/page/home/child/HomeProductList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/page/home/child/HomeProductList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/page/home/child/homeHeader.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/page/home/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/page/home/home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/page/user/user.vue" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/page/user/user.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/router/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/router/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/store/modules/tarbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/store/modules/tarbar.js" afterDir="false" />
-    </list>
+    <list default="true" id="4110d4d7-8f70-49f8-9c50-284c469a15b3" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -185,7 +32,7 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-600">
+            <state relative-caret-position="-227">
               <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
             </state>
           </provider>
@@ -1132,7 +979,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-600">
+        <state relative-caret-position="-227">
           <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
         </state>
       </provider>

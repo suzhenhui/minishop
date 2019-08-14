@@ -1,0 +1,29 @@
+{
+  "apps" [
+    {
+      "name": "Website",
+      "script": "app.js",
+      "env": {
+        "COMMON_VARIABLE":"true"
+      },
+      "env_production":{
+        "NODE_ENV": "production"
+      }
+    }
+  ],
+  "deploy":{
+   "production":{
+     "user": "root",
+     "host": ["111.230.167.112"],
+     "port": "22",
+     "ref":"origin/master",
+     "repo":"https://github.com/suzhenhui/minishop.git",
+     "ssh_options": "StrictHostKeyChecking=no",
+     "path":"/future/www/project/szh/www/production",
+     "post-deploy":"npm install && pm2 startOrRestart ecosystem.json --env production"
+     "env": {
+	"NODE_ENV": "production"
+     }
+   }
+  }
+}
