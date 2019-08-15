@@ -19,7 +19,7 @@ router.get('/list',function (req,res) {
             data.forEach(function (item) {
                 map[item.id] = item;       //这里的ID根据数据库的字段
             });
-            console.log(map)
+           // console.log(map)
             var val = [];
             data.forEach(function (item) {
                 var parent = map[item.pid];      //这里是父级ID---pid

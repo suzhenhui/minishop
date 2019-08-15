@@ -1,5 +1,5 @@
 const config = {
-    static_img_url: 'http://localhost:7001/images/',
-    static_upload_url: 'http://localhost:7001/uploads/'
+    static_img_url: 'http://111.230.167.112:8101/images/',
+    static_upload_url: 'http://111.230.167.112:8101/uploads/'
 }
 module.exports = config
