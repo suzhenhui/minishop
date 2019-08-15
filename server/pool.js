@@ -1,10 +1,10 @@
 const mysql = require("mysql")
 
 var pool = mysql.createPool({
-    host:"127.0.0.1",
+    host:"111.230.167.112",
     port:3306,
-    user:"root",
-    password: '',
+    user:"lukcy_jie",
+    password: 'Djj2018@',
     database:'minishop',
     connectionlimit: 20 
 })
