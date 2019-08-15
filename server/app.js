@@ -15,7 +15,7 @@ const urls = ['/user/login','/home/banner','/home/index'];
 const cors = require('cors')
 
 app.use(cors({
-    origin: ["http://127.0.0.1:8080","http://localhost:8080"],
+    origin: ["http://127.0.0.1:8080","http://localhost:8080","http://localhost:7004","http://szh.zjchuanbo.com"],
     credentials:true
 }))
 app.use(bodyParser.json());
