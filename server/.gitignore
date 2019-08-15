@@ -4,7 +4,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-pool.js
+/pool.js
 
 # Editor directories and files
 .idea
