@@ -1,6 +1,6 @@
 <template>
   <div class="product-info border" @click="goDetail()">
-    <img class="product-img" :src="item.img" alt="">
+    <img ref="img" class="product-img" v-lazy="item.img" alt="">
     <span class="product-title">{{item.name}}</span>
     <div class="product-bottom">
       <span class="product-price">￥ {{item.price}}</span>
@@ -9,12 +9,20 @@
 </template>
 
 <script>
+    import {Lazyload} from 'mint-ui'
     export default {
         name: "HomeProductBody",
         props:['item'],
+        mounted(){
+          this.getImgWh()
+        },
         methods:{
           goDetail(){
             this.$router.push({name:'product',query:{id:this.item.id}})
+          },
+          getImgWh(){
+            let w = this.$refs.img.width;
+            this.$refs.img.style.height = w + 'px';
           }
         }
     }
@@ -37,6 +45,7 @@
     .product-title{
       display: -webkit-box;
       height: 66px;
+      line-height: 33px;
       -webkit-box-orient: vertical;
       -webkit-line-clamp:2;
       word-break: break-word;
@@ -53,5 +62,9 @@
         font-size: $fontSize;
       }
     }
+  }
+  img[lazy=loading] {
+    height: 100px;
+    margin: auto;
   }
 </style>

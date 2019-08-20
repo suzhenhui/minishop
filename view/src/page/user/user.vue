@@ -5,7 +5,8 @@
           <img class="nav-icon" src="../../assets/images/change-icon/setup.png" />
         </div>
         <div class="nav-item right-nav-item">
-          <img class="nav-icon" src="../../assets/images/change-icon/message.png" />
+          <!--<img class="nav-icon" src="../../assets/images/change-icon/message.png" />-->
+          <a @click="signout()">退出</a>
         </div>
         <div class="top-info-wrapper">
           <div class="avatar-wrapper">
@@ -77,7 +78,7 @@
     import {mapState,mapMutations,mapActions} from 'vuex'
     import {orderSubtotal} from '../../api/order'
     import {uploadImgs} from '../../api/user'
-    import {Toast} from 'mint-ui'
+    import {Toast,MessageBox} from 'mint-ui'
     export default {
         name: "user",
         data(){
@@ -107,7 +108,8 @@
         },
         methods:{
           ...mapMutations({
-            changeStatus: 'changeStatus'
+            changeStatus: 'changeStatus',
+            clearToken:"signout"
           }),
           ...mapActions({
             fetchOrderCount:'fetchOrderCount'
@@ -141,7 +143,14 @@
             }
 
 
-           }
+           },
+          signout(){
+            MessageBox.confirm('确认退出', '').then(action=>{
+              this.clearToken()
+              this.$router.push({name:'signin'})
+            }).catch(err => {
+            })
+          }
         }
     }
 </script>
@@ -159,6 +168,8 @@
         display: flex;
         width: 48px;
         height: 48px;
+        font-size: $fontSize;
+        color: #fff;
         .nav-icon{
           width: 100%;
         }

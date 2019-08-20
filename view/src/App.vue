@@ -22,9 +22,9 @@
     }
   },
   created(){
-    //if(this.isOnline){
+    if(this.isOnline){
       this.getCartNumber()
-    //}
+    }
   },
   computed:{
     ...mapGetters({

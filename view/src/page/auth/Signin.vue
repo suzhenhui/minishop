@@ -1,8 +1,8 @@
 <template>
     <div class="container">
       <mt-header class="header" fixed title="登陆">
-        <header-item slot="left" :isBack=true></header-item>
-        <header-item slot="right" title="注册"></header-item>
+        <header-item slot="left" :isBack=true @click.native="goHome"></header-item>
+        <header-item slot="right" title="注册" @click.native="goReg"></header-item>
       </mt-header>
 
       <div class="signin-wrapper main-wrapper">
@@ -41,6 +41,13 @@
           ...mapMutations({
             saveAuthInfo:'signin'
           }),
+          goHome() {
+            this.$router.push({name:'home'})
+          },
+          goReg(){
+            console.log(2)
+            this.$router.push({name:'signup'})
+          },
           signin(){
             let username = this.username;
             let password = this.password;
@@ -115,6 +122,7 @@
     .button{
       @include button();
       margin-top: 80px;
+      width: 100%;
     }
   }
 </style>

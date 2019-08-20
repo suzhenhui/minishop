@@ -18,6 +18,17 @@ const mutations = {
   saveToken(state,payload){
     state.isOnline = true;
     state.token = payload.token;
+  },
+  signout(state){
+    this.commit('clearUser')
+    this.commit('clearToken')
+  },
+  clearUser(state){
+    state.user = null
+  },
+  clearToken(state){
+    state.isOnline = false
+    state.token = null
   }
 }
 

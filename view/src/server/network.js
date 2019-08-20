@@ -1,5 +1,6 @@
 import axios from 'axios'
 import store from '../store/index'
+import { ENUM } from '../const/enum'
 
 axios.interceptors.request.use(config=>{
   let token = null;
@@ -18,6 +19,7 @@ axios.interceptors.response.use(response => {
     }else{
       let errorMessage = response.data.msg;
       let errorCode = response.data.error_code;
+      onAuthInvaild(errorCode)
       return Promise.reject({ 'errorCode': errorCode, 'errorMsg': errorMessage });
     }
   }else{
@@ -60,7 +62,6 @@ export function fetchEndpoint(reqUrl, type = 'POST', data = {}) {
   })
 }
 
-
 export function fetchUpload(reqUrl, data) {
   reqUrl = config.API_HOST + reqUrl;
 
@@ -72,4 +73,10 @@ export function fetchUpload(reqUrl, data) {
     })
   })
 
+}
+
+function onAuthInvaild(errorCode) {
+  if(errorCode == ENUM.ERROR_CODE.TOKEN_INVALID || errorCode == ENUM.ERROR_CODE.TOKEN_EXPIRED){
+    window.router.push({ name: 'signin', params: { isTokenInvalid: true } })
+  }
 }

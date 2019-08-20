@@ -5,6 +5,7 @@ import User from '../page/user/user'
 import ProductList from '../page/product-list/ProductList'
 import ProductDetail from '../page/product-detail/ProductDetail'
 import Signin from '../page/auth/Signin'
+import Signup from '../page/auth/Signup'
 import Checkout from '../page/checkout/checkout'
 import AddressEdit from  '../page/address/AddressEdit'
 import AddressList from '../page/address/AddressList'
@@ -61,6 +62,11 @@ export default [
     path:'/signin',
     name:'signin',
     component: Signin
+  },
+  {
+    path:'/signup',
+    name: 'signup',
+    component: Signup
   },
   {
     path:'/checkout',

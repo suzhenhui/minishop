@@ -4,7 +4,7 @@
         <dt><p>
           最近搜索
         </p></dt>
-        <dd>
+        <dd v-if="currenKeywords.length>0">
           <a v-for="(item,index) in currenKeywords" @click="getKey(item)">{{item}}</a>
         </dd>
       </dl>
@@ -27,7 +27,16 @@
             query:''
           }
         },
-        props:['hotKeywords','currenKeywords'],
+        props:{
+          currenKeywords:{
+            type:Array,
+            default:[]
+          },
+          hotKeywords:{
+            type:Array,
+            default:[]
+          }
+        },
         methods:{
           getKey(item){
             this.$emit('key',item)

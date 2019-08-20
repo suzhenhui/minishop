@@ -7,3 +7,8 @@ export const authSignin = (username,password) =>
     'password':password
  })
 
+export const authSignup = (username,password) => fetchEndpoint(
+  '/user/reg','post',{
+    username,password
+  }
+)

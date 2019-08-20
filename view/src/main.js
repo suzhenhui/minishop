@@ -16,6 +16,7 @@ Vue.config.productionTip = false;
 
 Vue.prototype.utils = utils
 
+window.router = router;
 
 Vue.use(Mint)
 
