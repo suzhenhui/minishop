@@ -21,6 +21,7 @@ app.use(cors({
 }))
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
+app.use(express.static(__dirname + '/public'));
 
 var userRouter = require('./routes/user');
 var homeRouter = require('./routes/home')
@@ -79,7 +80,6 @@ app.use('/search',search)
 
 app.listen(8101)
 
-app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({extended:false}));
 
 
