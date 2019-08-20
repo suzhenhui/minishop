@@ -64,7 +64,7 @@ router.get('/quantity',function (req,res) {
 })
 
 router.get('/list',function (req,res) {
-    let uid = 1
+    let uid = req.user
     sql = "select table_cart.id,goods_id,goods_number,name,full_name,price,stock,img,status from table_cart left join table_goods on table_cart.goods_id = table_goods.id where member_id=? and is_delete=false"
     pool.query(sql,[uid],(err,result)=>{
         if(err){
@@ -161,7 +161,7 @@ router.post('/checkout',async (req,res)=>{
    // console.log(cartGoodsId)
     let orderNo =randomNumber();
    // console.log(orderNo)
-    let uid = 1;
+    let uid = req.user;
     let order_status = 0;
     let product_amount_total = 100; //商品总价
     let order_amount_total = 100; //订单金额

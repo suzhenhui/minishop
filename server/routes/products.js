@@ -16,7 +16,6 @@ router.get('/list',function (req,res) {
     }
     pool.query(sql,async (err,result)=>{
         if(err) throw err;
-        console.log(sql)
         let getCount = new Promise((resolve,reject)=>{
             if(category == ''){
                 var sql1 = "SELECT count(*) as total FROM table_goods"

@@ -10,7 +10,8 @@ const path = require('path');
 const config = require('./config')
 var app = express();
 
-const urls = ['/user/login','/home/banner','/home/index'];
+const urls = ['/user/login','/user/reg','/home/banner','/home/index','/home/productlist','/category/list','/products/detail'];
+
 
 const cors = require('cors')
 
@@ -32,24 +33,40 @@ var search = require('./routes/search')
 
 app.use(cookieParser());
 
-// app.use((req,res,next)=>{
-//     if(urls.indexOf(req.url) != -1){
-//         next()
-//     }else{
-//         let userToken = req.headers.token;
-//         //token鉴权接口
-//         let cert = fs.readFileSync(path.resolve(__dirname,'./jwt_pub.pem'))
-//         try{
-//             const decode = jwt.verify(userToken,cert)
-//             next()
-//         }catch (e) {
-//             res.send({
-//                 error_code: 401,
-//                 msg: '登录已过期,请重新登录'
-//             })
-//         }
-//     }
-// })
+app.use((req,res,next)=>{
+    let url = '';
+    if(req.url.indexOf('?') != -1){
+        url = req.url.split('?')[0]
+    }else{
+        url = req.url;
+    }
+    if(urls.indexOf(url) != -1){
+        next()
+    }else{
+        let userToken = req.headers.token;
+        //token鉴权接口
+        let cert = fs.readFileSync(path.resolve(__dirname,'./jwt_pub.pem'))
+        try{
+            const decode = jwt.verify(userToken,cert)
+            req.user = decode.id
+            next()
+        }catch (e) {
+           // console.log(e.message)
+            if(e.message == 'jwt expired'){
+                res.send({
+                    error_code: 10002,
+                    msg: '登录已过期,请重新登录'
+                })
+            }else{
+                res.send({
+                    error_code: 10001,
+                    msg: 'Token 无效,请重新登录'
+                })
+            }
+
+        }
+    }
+})
 
 app.use('/user',userRouter)
 app.use('/home',homeRouter)

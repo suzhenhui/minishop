@@ -49,7 +49,7 @@ router.get('/cities',(req,res)=>{
 
 router.post('/add',async (req,res) =>{
     let {id,name,tel,address,area,areaName} = req.body;
-    let uid=1;
+    let uid=req.user;
     let is_default =1 ;
     let sql2 = "update table_address set is_default = 0 where uid=?"
     let sql = "insert into table_address(uid,uname,tel,address,area_name,area_code,is_default) values (?,?,?,?,?,?,?)"
@@ -85,7 +85,7 @@ router.post('/add',async (req,res) =>{
 })
 
 router.get('/list',(req,res)=>{
-    let uid=1
+    let uid=req.user
     let sql = "select id,tel,address,area_name,area_code,is_default,uname from table_address where uid=? order by is_default desc"
     pool.query(sql,[uid],(err,result)=>{
         if(result){
@@ -99,7 +99,7 @@ router.get('/list',(req,res)=>{
 
 router.get('/default',async (req,res)=>{
     let id = req.query.id;
-    let uid = 1;
+    let uid = req.user;
     let sql = "update table_address set is_default = 0 where uid=?"
     let sql2 = "update table_address set is_default = 1 where id=?"
 

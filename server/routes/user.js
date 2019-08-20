@@ -29,7 +29,7 @@ router.post('/login', function (req, res,next) {
         if(err) throw err;
         if(result.length>0){
             let userToken = jwt.sign({
-                id: result[0].customer_id,
+                id: result[0].id,
                 username: result[0].username
             },cert,{
                 algorithm: 'RS256',
@@ -49,6 +49,55 @@ router.post('/login', function (req, res,next) {
             res.send(data)
         }
     })
+})
+
+router.post('/reg',function (req,res) {
+    let {username,password} = req.body;
+    let sql1 = "select username from table_user where username=?"
+    let sql2 = "insert into table_user(username,password) values (?,?)"
+    let sql3 = "select max(id) as id from table_user"
+    pool.query(sql1,[username],(err,result)=>{
+        if(err) throw err;
+        if(result.length>0){
+            res.send({
+                err_code:40001,
+                msg: '手机号码已注册'
+            })
+        }else{
+            pool.query(sql2,[username,password],async (err,result)=>{
+                if(err) throw err;
+                if(result.affectedRows>0){
+                    let id = await getId();
+                    let cert = fs.readFileSync(path.resolve(__dirname, '../jwt.pem'));
+                    let userToken = jwt.sign({
+                        id: id,
+                        username: username
+                    },cert,{
+                        algorithm: 'RS256',
+                        expiresIn: '15min'
+                    })
+                    res.send({
+                        err_code: 0,
+                        userToken:userToken,
+                        username:username,
+                        msg: '注册成功'
+                    })
+                }
+            })
+        }
+    })
+    
+    function getId() {
+        return new Promise((resolve,reject)=>{
+            pool.query(sql3,(err,result)=>{
+                if(result.length>0){
+                    resolve(result[0].id)
+                }else{
+                    reject(err)
+                }
+            })
+        })
+    }
 })
 
 router.post('/headimg',upload.single('file'),function (req,res) {

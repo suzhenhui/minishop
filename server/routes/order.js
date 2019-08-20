@@ -15,7 +15,7 @@ router.post('/payorder',function (req,res) {
     let orderNo = req.body.orderNo;
     let tid = req.body.tid;
     let pay_time = (new Date()).getTime();
-    let uid = 1
+    let uid = req.user
     let sql = "update table_order set order_status = 1 , pay_status = ? , pay_time = ? where order_no = ? and uid=?"
     pool.query(sql,[tid,pay_time,orderNo,uid],(err,result)=>{
         if(result.affectedRows>0){
@@ -28,7 +28,7 @@ router.post('/payorder',function (req,res) {
 
 router.get('/list',function (req,res) {
     let {status,page,per_page} = req.query;
-    let uid=1;
+    let uid=req.user;
     if(page<=0 || page==undefined) page = 1;
     if(per_page== undefined) per_page=10;
     let start = (page-1) * per_page;
@@ -216,7 +216,7 @@ router.post('/confirm',function (req,res) {
 })
 
 router.post('/subtotal',function (req,res) {
-    let uid = 1
+    let uid = req.user;
     let sql = "select order_status as status,count(*) as nums from table_order where uid = ? GROUP BY order_status"
     pool.query(sql,[uid],(err,result)=>{
         if(err) throw err;
