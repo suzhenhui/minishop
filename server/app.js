@@ -10,7 +10,7 @@ const path = require('path');
 const config = require('./config')
 var app = express();
 
-const urls = ['/user/login','/user/reg','/home/banner','/home/index','/home/productlist','/category/list','/products/detail'];
+const urls = ['/user/login','/user/reg','/home/banner','/home/index','/home/productlist','/category/list','/products/detail','/search/getDefaultKey','/products/list'];
 
 
 const cors = require('cors')
