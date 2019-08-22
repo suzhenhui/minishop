@@ -16,6 +16,7 @@
 ## 项目构建
 ### 前端
 前端在`vue-cli3`基础上开发，前端代码在`view/`文件夹中 
+
 **移动端适配**: 使用vw实现移动端适配，借助Vue官网提供的构建工程以及一些PostCSS插件来完成。
 
 **请求拦截器**：在`view/src/server/network`中，基于`axios`提供的`interceptors`对所有ajax的请求和响应添加相应操作，如请求头添加，token添加，响应后台错误状态码的识别与报错；简单封装了下axios请求，主要为get，post两种。
